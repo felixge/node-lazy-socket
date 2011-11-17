@@ -1,5 +1,7 @@
 # lazy-socket
 
+[![Build Status](https://secure.travis-ci.org/felixge/node-lazy-socket.png)](http://travis-ci.org/felixge/node-lazy-socket)
+
 A stateless socket that always lets you write().
 
 If there is an error, `write()` guarantees that you will be provided with a
