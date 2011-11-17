@@ -13,13 +13,9 @@ var server = net.createServer(function(socket) {
 
   num++;
   if (num === 1) {
-    server.on('close', function() {
-      socket
-        .on('end', function() {
-          sendSecondMessage();
-        })
-        .end();
-    })
+    socket
+      .on('end', sendSecondMessage)
+      .end();
 
     server.close();
   }
