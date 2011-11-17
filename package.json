@@ -14,6 +14,10 @@
   "engines": {
     "node": "*"
   },
-  "dependencies": {},
+  "dependencies": {
+    "utest": "0.0.3",
+    "sinon": "~1.2.0",
+    "urun": "0.0.4"
+  },
   "devDependencies": {}
 }
