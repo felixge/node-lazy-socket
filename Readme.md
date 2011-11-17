@@ -4,8 +4,9 @@
 
 A stateless socket that always lets you write().
 
-If there is an error, `write()` guarantees that you will be provided with a
-callback.
+If there is an error, all previous `write()` callbacks will be honored. A new
+connection will be established as soon as the next `write()` occurs. Writes
+will not be retried.
 
 ## Install
 
