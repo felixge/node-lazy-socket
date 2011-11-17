@@ -10,7 +10,9 @@ will not be retried.
 
 ## Install
 
-Not ready for you yet.
+```
+npm install lazy-socket
+```
 
 ## Usage
 
