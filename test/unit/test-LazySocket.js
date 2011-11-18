@@ -23,7 +23,12 @@ var fakeSocket;
 test('LazySocket', {
   before: function() {
     socket     = new LazySocket();
-    fakeSocket = sinon.stub(Object.create(net.Socket.prototype));
+    fakeSocket = sinon.stub({
+      once: function() {},
+      destroy: function() {},
+      end: function() {},
+      write: function() {},
+    });
 
     sinon.stub(net, 'createConnection').returns(fakeSocket);
     fakeSocket.once.returns(fakeSocket);

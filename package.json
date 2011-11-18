@@ -15,9 +15,10 @@
     "node": "*"
   },
   "dependencies": {
-    "utest": "0.0.3",
-    "sinon": "git://github.com/felixge/Sinon.JS.git#stub-prototype-properties",
-    "urun": "0.0.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "sinon": "1.2.0",
+    "utest": "0.0.3",
+    "urun": "0.0.4"
+  }
 }
